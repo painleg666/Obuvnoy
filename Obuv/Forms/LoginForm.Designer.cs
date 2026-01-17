@@ -68,8 +68,6 @@
             this.textlogin.TabIndex = 2;
             this.textlogin.Text = "Введите логин";
             this.textlogin.Click += new System.EventHandler(this.textlogin_Click);
-            this.textlogin.TextChanged += new System.EventHandler(this.textlogin_TextChanged);
-            this.textlogin.Enter += new System.EventHandler(this.textlogin_Enter);
             // 
             // textpassword
             // 
@@ -107,7 +105,6 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Авторизация";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

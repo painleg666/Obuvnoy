@@ -19,9 +19,6 @@ namespace Obuv
         public LoginForm()
         {
             InitializeComponent();
-
-            //SetPlaceHolder(textlogin, "Введите логин");
-            //SetPlaceHolder(textpassword, "Введите пароль", true);
         }
 
         public void UserAuth()
@@ -60,38 +57,6 @@ namespace Obuv
             }
         }
 
-        //private void SetPlaceHolder(System.Windows.Forms.TextBox textbox, string text, bool isPassword = false)
-        //{
-        //    textbox.Text = text;
-        //    textbox.ForeColor = Color.Gray;
-
-        //    textbox.Enter += (s, e) =>
-        //    {
-        //        if (textbox.ForeColor == Color.Gray)
-        //        {
-        //            textbox.Text = "";
-        //            textbox.ForeColor = Color.Black;
-
-        //            if (isPassword)
-        //            {
-        //                textbox.UseSystemPasswordChar = true;
-        //            }
-        //        }
-        //    };
-        //    textbox.Leave += (s, e) =>
-        //    {
-        //        if (string.IsNullOrEmpty(textbox.Text))
-        //        {
-        //            textbox.Text = text;
-        //            textbox.ForeColor = Color.Gray;
-
-        //            if (isPassword)
-        //            {
-        //                textbox.UseSystemPasswordChar = false;
-        //            }
-        //        };
-        //    };
-        //}
         private void button1_Click(object sender, EventArgs e)
         {
             UserAuth();
@@ -112,27 +77,6 @@ namespace Obuv
             this.Hide();
             MainForm mainForm = new MainForm();
             mainForm.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textlogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void textlogin_Enter(object sender, EventArgs e)
-        {
-   
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void textlogin_Click(object sender, EventArgs e)
